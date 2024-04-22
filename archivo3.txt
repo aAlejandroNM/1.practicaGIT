@@ -1,0 +1,47 @@
+Funcion  dibujar_figura ( tipo_figura , altura )
+	Definir asterisco , prueba Como caracter
+	Definir contador , contador2 Como Entero
+	Si tipo_figura == "triangulo" Entonces
+		asterisco = "*"
+		Para contador = 1 Hasta altura Con Paso 1 Hacer
+			Escribir asterisco 
+			asterisco = asterisco + "*"
+		Fin Para
+	SiNo
+		Si tipo_figura == "cuadrado" Entonces
+			Para contador = 1 Hasta altura Con Paso 1 Hacer
+				asterisco = asterisco + "*"
+			Fin Para
+			
+			Mientras contador2 < altura Hacer
+				Escribir asterisco
+				contador2 = contador2 + 1
+			Fin Mientras
+			
+		Fin Si
+	Fin Si
+	
+Fin Funcion
+
+Algoritmo sin_titulo
+	Definir  tipo_figura Como Caracter
+	Definir altura , Rprograma como entero
+	
+	Escribir "desea iniciar el programa 1 para si , 2 para no"
+	leer Rprograma
+	
+	Mientras Rprograma == 1 Hacer
+		Escribir "que tipo de figura desea hacer: -cuadrado -triangulo"
+		Leer tipo_figura
+		Escribir "ingrese la altura"
+		leer altura 
+		
+		dibujar_figura(tipo_figura , altura)
+		Escribir "desea repetir el programa 1 para si , 2 para no"
+		leer Rprograma
+	Fin Mientras
+	
+
+	
+	
+FinAlgoritmo
